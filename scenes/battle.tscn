@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://xnwrcf2jstxd"]
+
+[ext_resource type="Script" path="res://scripts/battle.gd" id="1_j5r36"]
+[ext_resource type="PackedScene" uid="uid://hqytl0badis6" path="res://scenes/emoji.tscn" id="2_1j50i"]
+
+[node name="Battle" type="Node2D" node_paths=PackedStringArray("first_team", "second_team")]
+script = ExtResource("1_j5r36")
+first_team = [NodePath("Emoji"), NodePath("Emoji6"), NodePath("Emoji5")]
+second_team = [NodePath("Emoji2"), NodePath("Emoji3"), NodePath("Emoji4")]
+
+[node name="Emoji" parent="." instance=ExtResource("2_1j50i")]
+position = Vector2(193, 295)
+
+[node name="Emoji2" parent="." instance=ExtResource("2_1j50i")]
+position = Vector2(1021, 294)
+
+[node name="Emoji3" parent="." instance=ExtResource("2_1j50i")]
+position = Vector2(887, 293)
+
+[node name="Emoji4" parent="." instance=ExtResource("2_1j50i")]
+position = Vector2(749, 293)
+
+[node name="Emoji5" parent="." instance=ExtResource("2_1j50i")]
+position = Vector2(465, 295)
+
+[node name="Emoji6" parent="." instance=ExtResource("2_1j50i")]
+position = Vector2(327, 295)

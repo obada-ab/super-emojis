@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://hqytl0badis6"]
+
+[ext_resource type="Texture2D" uid="uid://bonusr6jhbkgr" path="res://emojis/1F9DD_color.png" id="1_cb120"]
+[ext_resource type="Script" path="res://scripts/emoji.gd" id="1_mixwq"]
+
+[node name="Emoji" type="Node2D"]
+script = ExtResource("1_mixwq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_cb120")
+
+[node name="Attack" type="RichTextLabel" parent="."]
+offset_left = -53.0
+offset_top = 68.0
+offset_right = -2.0
+offset_bottom = 108.0
+text = "⚔15"
+
+[node name="Health" type="RichTextLabel" parent="."]
+offset_left = 3.0
+offset_top = 67.0
+offset_right = 50.0
+offset_bottom = 107.0
+text = "❤️15"

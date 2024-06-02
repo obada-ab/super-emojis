@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cicorcfq2bcq2"]
+
+[ext_resource type="PackedScene" uid="uid://hqytl0badis6" path="res://scenes/emoji.tscn" id="1_rdtmp"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Emoji" parent="." instance=ExtResource("1_rdtmp")]
+position = Vector2(314, 306)
+health = 20
+attack = 20
